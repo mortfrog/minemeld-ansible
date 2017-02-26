@@ -4,9 +4,9 @@
   sudo: yes
 
   # remove comment to set custom repositories
-  # vars:
-  #   core_repo: "https://github.com/jtschichold/minemeld-core.git"
-  #   prototype_repo: "https://github.com/jtschichold/minemeld-node-prototypes.git"
+  vars:
+    core_repo: "https://github.com/mortfrog/minemeld-core.git"
+    prototype_repo: "https://github.com/mortfrog/minemeld-node-prototypes.git"
 
   roles:
   - infrastructure

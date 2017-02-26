@@ -4,13 +4,13 @@
 
 # install required services
 - name: rabbitmq-server
-  apt: name=rabbitmq-server state=present
+  package: name=rabbitmq-server state=present
 - name: redis-server
-  apt: name=redis-server state=present
+  package: name=redis-server state=present
 - name: collectd
-  apt: name=collectd-core state=present
+  package: name=collectd-core state=present
 - name: nginx
-  apt: name=nginx state=present
+  package: name=nginx state=present
 - name: start rabbitmq-server
   service: name=rabbitmq-server state=started
 - name: start redis-server
